@@ -51,6 +51,8 @@ The WAN interface uses a private RFC 1918 IPv4 address, while the Dashboard also
 
 ### Step 1 — Access the Dashboard
 
+<img width="1152" height="1536" alt="01-dashboard-navigation" src="https://github.com/user-attachments/assets/256276fb-f952-4474-b79e-8e4ea48a41cd" />
+
 1. Open [dashboard.meraki.com](https://dashboard.meraki.com).
 2. Sign in with an authorized account.
 3. Select the appropriate organization.
@@ -59,6 +61,10 @@ The WAN interface uses a private RFC 1918 IPv4 address, while the Dashboard also
 **Result:** Dashboard access and organization visibility confirmed.
 
 ### Step 2 — Set Up a Training Network
+
+<img width="634" height="425" alt="02-network-setup" src="https://github.com/user-attachments/assets/9e977ca3-6c18-43f3-ae29-d2c44b6b94a1" />
+
+<img width="771" height="422" alt="03-appliance-type" src="https://github.com/user-attachments/assets/227b35c9-f217-43f4-b623-d8277b7217e4" />
 
 1. Open the network selector and choose **Create a network**.
 2. Enter the following settings:
@@ -80,6 +86,8 @@ The WAN interface uses a private RFC 1918 IPv4 address, while the Dashboard also
 
 ### Step 3 — Inspect Organization Inventory
 
+<img width="1582" height="225" alt="04-inventory" src="https://github.com/user-attachments/assets/36661c81-4438-42a9-9501-6eb91702be08" />
+
 1. Go to **Organization → Inventory**.
 2. Locate the MX64W by model.
 3. Review the assigned network and device information.
@@ -96,6 +104,8 @@ The WAN interface uses a private RFC 1918 IPv4 address, while the Dashboard also
 **Interpretation:** The appliance was already assigned to another network. It was intentionally **not reassigned**, to avoid disrupting the existing configuration.
 
 ### Step 4 — Verify Appliance Status
+
+<img width="1875" height="847" alt="05-appliance-summary" src="https://github.com/user-attachments/assets/d2b66f80-842e-4719-b621-5f763d711f2c" />
 
 1. Open the appliance's existing network (**Branch B**).
 2. Navigate to **Security & SD-WAN → Appliance status** (menu labels can vary).
@@ -115,6 +125,8 @@ The WAN interface uses a private RFC 1918 IPv4 address, while the Dashboard also
 **Interpretation:** The appliance was online and managed by Meraki Dashboard. The available firmware update was **not installed** as part of this lab.
 
 ### Step 5 — Inspect WAN Uplink
+
+<img width="1386" height="748" alt="06-wan-uplink" src="https://github.com/user-attachments/assets/a330b948-f181-473c-a271-0c3487febc8e" />
 
 1. From **Appliance status**, select **Uplink**.
 2. Review the IPv4/IPv6 configuration, gateway, DNS, and traffic graphs.
@@ -150,6 +162,8 @@ show interfaces
 ```
 
 ### Step 6 — Inspect DHCP Subnets and Leases
+
+<img width="1372" height="718" alt="07-dhcp-leases" src="https://github.com/user-attachments/assets/a1327b1f-4cf9-459c-98c5-a7c2036b1f89" />
 
 1. From **Appliance status**, select **DHCP**.
 2. Review the listed DHCP subnets and VLAN identifiers.
